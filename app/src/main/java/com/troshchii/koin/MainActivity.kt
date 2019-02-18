@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
 
     private val textView by lazy { findViewById<TextView>(R.id.textView) }
 
-    private val presenter: Presenter by inject()
+    private val presenter: SimplePresenter by inject()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
