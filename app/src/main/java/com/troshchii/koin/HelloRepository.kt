@@ -9,5 +9,7 @@ class HelloRepositoryImpl : HelloRepository {
 }
 
 class SimplePresenter(private val repo: HelloRepository) {
-    fun sayHello() = "${repo.giveHello()}\nrepo: ${repo.hashCode()},\npresenter: ${this.hashCode()}"
+    fun sayHello() = "${repo.giveHello()}\n" +
+            "repo: ${repo.hashCode()},\n" +
+            "presenter: ${this.hashCode()}"
 }
