@@ -8,7 +8,7 @@ import org.koin.android.ext.android.inject
 
 class MainActivity : AppCompatActivity() {
 
-    private val tag = this@MainActivity.javaClass.simpleName
+    private val tag = javaClass.simpleName
 
     private val textView by lazy { findViewById<TextView>(R.id.textView) }
 
